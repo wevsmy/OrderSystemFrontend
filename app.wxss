@@ -1,0 +1,11 @@
+/**app.wxss**/
+@import './style/weui.wxss';
+@import './style/iconfont.wxss';
+
+page {
+  background-color: #f8f8f8;
+}
+.main {
+  position: relative;
+  width: 100%;
+}

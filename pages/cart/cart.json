@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "order-list": "/components/order-list/order-list",
+    "navbar": "../..//components/navbar/navbar"
+  }
+}

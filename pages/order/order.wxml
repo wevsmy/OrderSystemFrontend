@@ -1,0 +1,47 @@
+<!--pages/order/order.wxml-->
+<navbar back home text="{{navigationBarTitle}}"></navbar>
+
+<view class='main' style="{{'top:' + navigationBarHeight}}">
+
+  <view class='order-container'>
+
+    <view class='header'>
+      <view class='title'>
+        <open-data type="userNickName"></open-data>你好,你看这订单多便宜!
+      </view>
+    </view>
+
+    <scroll-view scroll-y='true' scroll-top="300">
+
+      <view class='tip'>未付款</view>
+      <view wx:for="{{cartList}}" wx:key="item.index" class='order'>
+
+        <view class='shop-name'>
+          <view>{{item.categoryName}}</view>
+        </view>
+        <view class='line'></view>
+
+        <view class='inside-container' wx:for="{{item.items}}" wx:key="item.index">
+          <view class='order-name'>{{item.name}}</view>
+          <view class='order-count'>x{{item.count}}</view>
+          <view class='order-price'>￥{{item.price}}</view>
+        </view>
+
+        <view class='total'>
+          <view class='order-name'></view>
+          <view class='order-count'>小计</view>
+          <view class='order-price'>￥{{item.total}}</view>
+        </view>
+      </view>
+
+      <view class='line-cut'></view>
+      <view class='pay-container'>
+        <view class='left-container'>共计：￥{{payTotal}}</view>
+        <view class='right-container'>
+          <view class='pay-btn' bindtap='pay'>立即支付</view>
+        </view>
+      </view>
+    </scroll-view>
+
+  </view>
+</view>

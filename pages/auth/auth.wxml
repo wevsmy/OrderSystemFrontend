@@ -1,0 +1,9 @@
+<!--pages/auth/auth.wxml-->
+<view class="auth">
+  <open-data type="userAvatarUrl" class="img"></open-data>
+  <view class="title"><open-data type="userNickName"></open-data></view>
+  <view class="title">亲亲这边建议您授权哦</view>
+  <view class="describe">青涩不及当初，聚散不由你我</view>
+  <button class="btn" open-type='getUserInfo' wx:if="{{canIUse}}" bindgetuserinfo='onAuth'>微信授权</button>
+  <navigator wx:if="{{!canIUse}}" class="btn" url="/pages/auth/auth" open-type="reLaunch" hover-class="other-navigator-hover">点击调转</navigator>
+</view>

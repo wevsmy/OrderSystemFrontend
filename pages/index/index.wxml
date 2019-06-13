@@ -1,0 +1,43 @@
+<!--index.wxml-->
+<navbar back home text="{{navigationBarTitle}}"></navbar>
+
+<view class='main' style="{{'top:' + navigationBarHeight}}">
+  <view class="index_container">
+    <view class='head'>
+      <view class='address'>
+        <text class='icon iconfont icon-dingwei'></text>
+        <text>{{'河科院'}}</text>
+        <text class='icon iconfont icon-row-right-copy'></text>
+      </view>
+
+      <view class='search'>
+        <view>
+          <text class='icon iconfont icon-search'></text>
+          <text>{{'烤鸭'}}</text>
+        </view>
+      </view>
+
+    </view>
+
+    <swiper class="swiper-image" indicator-dots="{{true}}" autoplay="{{true}}" interval="5000" duration="100">
+      <block wx:for="{{carouselList}}" wx:key="item.id">
+        <swiper-item>
+          <navigator url="{{item.link}}" hover-class="navigator-hover">
+            <image src="{{item.imgUrl}}" class="slide-image"></image>
+          </navigator>
+        </swiper-item>
+      </block>
+    </swiper>
+
+    <view class='near-store'>
+      <text class="near-store-text">精选商家</text>
+    </view>
+
+    <view class='store-list'>
+      <store-list wx:for='{{storeList}}' wx:key="item.storeId" store-info="{{item}}" bind:select="select" class='store-item'></store-list>
+    </view>
+
+    <view class='footer'>暂无更多~~</view>
+  </view>
+
+</view>

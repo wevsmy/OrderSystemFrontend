@@ -1,0 +1,17 @@
+<!--pages/cart/cart.wxml-->
+<navbar back home text="{{navigationBarTitle}}"></navbar>
+
+<view class='main' style="{{'top:' + navigationBarHeight}}">
+  <view class='cart-container'>
+
+    <block wx:if='{{orderList.length<=0}}'>
+      <view class='none'>没有相关订单</view>
+    </block>
+    <block wx:else>
+      <view class='order-list'>
+        <order-list class='order-item' wx:for='{{orderList}}' wx:key="item.storeId" order-info="{{item}}" bind:order-id="order-id"></order-list>
+      </view>
+    </block>
+
+  </view>
+</view>

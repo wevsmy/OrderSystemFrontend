@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "navbar": "../..//components/navbar/navbar"
+  },
+  "navigationBarBackgroundColor": "#333",
+  "navigationBarTextStyle": "white",
+  "enablePullDownRefresh": false
+}

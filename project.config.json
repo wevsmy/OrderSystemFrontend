@@ -1,0 +1,56 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.2.1",
+	"appid": "wxe5af1a273b79accb",
+	"projectname": "OrderSystem",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 1,
+			"list": [
+				{
+					"id": 0,
+					"name": "ss",
+					"pathName": "pages/store/store",
+					"query": "storeId=1",
+					"scene": 1011
+				},
+				{
+					"id": 1,
+					"name": "扫描二维码",
+					"pathName": "pages/index/index",
+					"query": "scene=3",
+					"scene": 1011
+				}
+			]
+		}
+	}
+}

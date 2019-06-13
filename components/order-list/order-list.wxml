@@ -1,0 +1,13 @@
+<!-- components/order-list/order-list.wxml -->
+
+<view class='order' bindtap="orderInfo">
+
+    <view class=''>------------------------------</view>
+    <view class='store-name'>商家名称:{{orderInfo.store_name}}</view>
+    <view class='order-id'>订单编号:{{orderInfo.order_id}}</view>
+    <view class='order-time'>下单时间:{{orderInfo.order_time}}</view>
+    <view class='order-dishs'>订单菜品:{{orderInfo.order_dishs_info}}</view>
+    <view class='order-amount'>订单金额:{{orderInfo.order_amount}}元</view>
+    <view class=''>------------------------------</view>
+
+</view>

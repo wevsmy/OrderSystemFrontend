@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "order-list": "/components/order-list/order-list",
+    "navbar": "../..//components/navbar/navbar"
+  },
+  "navigationBarBackgroundColor": "#ffd161",
+  "navigationBarTextStyle": "black",
+  "enablePullDownRefresh": false
+}
